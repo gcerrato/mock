@@ -1,0 +1,115 @@
+[{
+	status: 'pending',
+	type: 'build',
+	name: "Tenrox-R1_1235",
+	owner: "",
+	time: "",
+	boxes: [{
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}]
+}, {
+	status: 'running',
+	type: 'firewall',
+	name: "432462",
+	owner: "jtuck",
+	time: "4/18/2014 12:12pm",
+	boxes: [{
+		color: "blue",
+		percent: "75"
+	}, {
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}]
+}, {
+	status: 'rejected',
+	type: 'firewall',
+	name: "432461",
+	owner: "samy",
+	time: "4/18/2014 10:53am",
+	boxes: [{
+		color: "red",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}]
+}, {
+	status: 'complete',
+	type: 'build',
+	name: "Tenrox-R1_1235",
+	owner: "",
+	time: "4/18/2014 12:12pm",
+	boxes: [{
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}]
+}, {
+	status: 'rejected',
+	type: 'firewall',
+	name: "432460",
+	owner: "samy",
+	time: "4/17/2014 7:51am",
+	boxes: [{
+		color: "red",
+		percent: "100"
+	}, {
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}, {
+		color: "",
+		percent: ""
+	}]
+}, {
+	status: 'accepted',
+	type: 'firewall',
+	name: "432459",
+	owner: "samy",
+	time: "4/16/2014 6:43pm",
+	boxes: [{
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}, {
+		color: "green",
+		percent: "100"
+	}]
+}]
