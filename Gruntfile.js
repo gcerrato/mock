@@ -2,12 +2,13 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
 
-		clean:["main.js"],
+		clean: ["main.js"],
 
 		//config task
 		concat: {
 			js: {
-				src: ['app/lib/angular-1.2.21/angular.min.js','app/lib/angular-ui/angular-ui-router.js', 'app/js/**/*.js'],
+				src: ['app/lib/angular-1.2.21/angular.min.js', 'app/lib/angular-ui/angular-ui-router.js',
+				 'app/lib/angular-1.2.21/angular-mocks.js', 'app/lib/less/less.min.js', 'app/lib/jQuery/jquery.min.js', 'app/js/**/*.js'],
 				dest: 'main.js'
 			}
 		},
@@ -22,14 +23,14 @@ module.exports = function(grunt) {
 			}
 		},
 
-		watch:{
-			js:{
-				files:['<%= concat.js.src %>'],
-				tasks:['clean','concat:js']
+		watch: {
+			js: {
+				files: ['<%= concat.js.src %>'],
+				tasks: ['clean', 'concat:js']
 			},
-			homepage:{
-				files:['<%= homepage.template %>'],
-				tasks:['homepage:dev']
+			homepage: {
+				files: ['<%= homepage.template %>'],
+				tasks: ['homepage:dev']
 			}
 		}
 	});
@@ -43,6 +44,6 @@ module.exports = function(grunt) {
 	grunt.loadTasks("tasks");
 
 	//setup workflow
-	grunt.registerTask("default", ["clean","concat", "homepage:dev", "watch"]);
+	grunt.registerTask("default", ["clean", "concat", "homepage:dev", "watch"]);
 
 };

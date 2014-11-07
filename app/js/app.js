@@ -6,7 +6,7 @@ angular.module('myApp', [
 	'ui.router',
 	'myApp.services',
 	'myApp.directives',
-	'myApp.controllers'
+	'myApp.controllers',
 ]).run(['$rootScope', '$state', '$stateParams',
 	function($rootScope, $state, $stateParams) {
 

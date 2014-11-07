@@ -1,3 +1,37 @@
 <div class="main-content">
-	
+	<div class="table">
+		<div class="header">
+			<div class="title">
+				Changelist/Build
+			</div>
+			<div class="title">
+				Owner
+			</div>
+			<div class="title">
+				Time Started
+			</div>
+			<div class="title">
+				State
+			</div>
+			<div class="title">
+				Metrics
+			</div>
+			<div class="title">
+				Build
+			</div>
+			<div class="title">
+				Unit Test
+			</div>
+			<div class="title">
+				Functional Test
+			</div>
+		</div>
+		<div class="tbody" >
+		
+			<row ng-repeat="row in data" status="{{row.status}}" type="{{row.type}}" details="row"></row>
+					
+		</div>
+	</div>
 </div>
+
+

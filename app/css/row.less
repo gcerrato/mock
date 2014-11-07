@@ -1,0 +1,95 @@
+.row {
+	.section {
+		display: inline-block;
+		text-align: center;
+		height: 20px;
+		vertical-align: top;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.icon {
+		float: left;
+		margin-left: 10px;
+	}
+	.name {
+		transition: color 0.3s ease-in-out;
+		&.clicked {
+			text-decoration: underline;
+			color: #3478B6;
+		}
+	}
+	.text {
+		width: 13%;
+		min-width: 130px;
+	}
+	.calc {
+		width: 10%;
+		min-width: 100px;
+	}
+	.box-wrapper {
+		display: table;
+		width: 40px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.box {
+		display: table-cell;
+		vertical-align: middle;
+		background: #D8D8D8;
+		border: 1px #C8C8C8 solid;
+		position: relative;
+		box-shadow: 2px 2px 5px 0px #D8D8D8;
+	}
+	.fill {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		&.blue {
+			background: #5B9BD5;
+		}
+		&.green {
+			background: #538135;
+		}
+		&.red {
+			background: #C00000;
+		}
+	}
+	.tiles {
+		overflow-y: hidden;
+		transition: visibility 0.3s ease-in-out, height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+		height: 0px;
+		margin-left: 20px;
+		margin-right: 20px;
+		visibility: hidden;
+		&.open {
+			padding-top: 10px;
+			height: 170px;
+			visibility: visible;
+		}
+		.tile {
+			display: inline-block;
+			height: 144px;
+			width: 184px;
+			margin-right: 20px;
+			position: relative;
+			vertical-align: top;
+			&.green {
+				box-shadow: #a9a9a9 5px 5px 10px 0px;
+				border: 3px solid #62983D;
+				background-image: linear-gradient(to top left, transparent 0%, #ECF2EA 100%);
+			}
+			&.red {
+				border: 3px solid #ca2828;
+				background-image: linear-gradient(to top left, transparent 0%, #FCE1E1 100%);
+			}
+			.title {
+				margin-left: 10px;
+				font-size: 17px;
+				font-weight: 600;
+				padding-top: 5px;
+			}
+		}
+	}
+}
